@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+#nav li {
+    margin-right: 20px;
+    position: relative;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+    text-align: left;
+}
+#nav a:hover{
+    color: black;
+   
+}
+
+.subnav a {
+    padding: 10px;
+    display: block;
+}
+.nav-arrow-down {
+    margin-left: 5px;
+}
+.bagr {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh; /* Chiều cao bằng toàn bộ viewport */
+}
+
+.bagr-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bagr-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh trải đều trên toàn bộ phần tử */
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+form h1{
+    padding-top: 20px;
+}
+form label{
+    padding-top: 50px;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #e5e5ee; /* Màu nền của nút */
+    color: #f5efef; /* Màu chữ của nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng hover */
+}
+button a{
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #4c4f52; /* Màu nền thay đổi khi hover */
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+form {
+    /* Thiết lập các kiểu định dạng và khoảng cách */
+    margin-bottom: 20px;
+}
+
+/* Phần hiển thị thông tin đặt phòng */
+#bookingDetails {
+    /* Thiết lập kiểu định dạng và khoảng cách */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+#Room-Style h1{
+    padding-left: 730px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 4px; /* Độ bo tròn góc */
+    background-color: #f8f8f8; /* Màu nền */
+    color: #333; /* Màu chữ */
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgb(72, 64, 70); /* Màu nền ban đầu */
+    color: #ffffff; /* Màu chữ */
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, rgb(175, 76, 163), rgba(33, 150, 243, 1)); /* Sử dụng gradient màu */
+}

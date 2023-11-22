@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../../Backend_0"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hotel_sql",
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default",
+					"enableSsl": "Disabled"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3309,
+				"driver": "MySQL",
+				"name": "FirstMySQL Connection",
+				"database": "hotelmanager",
+				"username": "adminChien"
+			}
+		]
+	}
+}

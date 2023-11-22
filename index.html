@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <ul id="nav">
+                <li><a href="">CUSTOMER</a></li>
+                <li><a href="">ROOM</a>
+                    <ul class="subnav">
+                        <li><a href="RoomHotel/room.html" title="Chọn Phòng Ngay Tại Đây" target="_blank">Choose
+                                Room</a></li>
+                    </ul>
+                </li>
+                <li><a href="">BOOKING
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="Bookinghotel/booking.html" title="Đặt Phòng" target="_blank">Rent Now</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="bagr">
+            <div class="bagr-content">
+                <img src="./assets/img/Untitled.png" alt="background-hotel">
+            </div>
+        </div>
+        <form>
+            <h1>HOTEL NAME</h1>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Các trường mới -->
+
+            <!-- <a href="./Bookinghotel/booking.html"><input type="submit" value="Đặt Phòng"></a> -->
+            <button> <a href="./Bookinghotel/booking.html">Đặt Phòng</a></button>
+            <button> <a href="./RoomHotel/room.html">Thêm Phòng</a></button>
+
+
+            <!-- Booking Next -->
+
+
+            <!-- Rooms Next-->
+
+        </form>
+
+
+
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const notification = document.getElementById('notification');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                // Xử lý logic đặt phòng và hiển thị thông báo tương ứng
+                // (thông báo có thể được thêm vào element notification)
+            });
+        });
+    </script>
+    </div>
+
+</body>
+
+</html>

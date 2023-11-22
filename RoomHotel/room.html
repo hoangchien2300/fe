@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecus.css">
+    <title>RoomHotel</title>
+</head>
+<body>
+    <div id="Room-Style">
+        <h1>Rooms</h1>
+        <form id="roomForm" action="http://localhost:8080/api/rooms" method="POST">
+            <label for="room">Number Room:</label>
+            <select id="room" name="room" required>
+            <option value="101">101</option>
+            <option value="201">201</option>
+            <option value="301">301</option>
+    <!-- You can add more options as needed -->
+            </select>
+            <label for="roomType">Rooms Style:</label>
+            <select id="roomType" name="roomType">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="luxury">Luxury</option>
+            
+            </select>
+
+            <label for="price">Price:</label>
+                <select id="price" name="price" required>
+                <option value="200000">200,000 VND</option>
+                <option value="500000">500,000 VND</option>
+                <option value="1000000">1,000,000 VND</option>
+                   <!-- You can add more options as needed -->
+                </select>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="available">Available</option>
+                <option value="occupied">Booked</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+
+            <div id="buttonGroup">
+                <input type="submit" value="SUBMIT">
+                <button type="button" id="addButton" onclick="addItem()">Thêm</button>
+                <button type="button" id="editButton" onclick="editItem()">Sửa</button>
+                <button type="button" id="deleteButton" onclick="deleteItem()">Xóa</button>
+            </div>
+        </form>
+
+        <script>
+            function addItem() {
+                // Thực hiện logic thêm ở đây
+                console.log('Thêm');
+            }
+
+            function editItem() {
+                // Thực hiện logic sửa ở đây
+                console.log('Sửa');
+            }
+
+            function deleteItem() {
+                // Thực hiện logic xóa ở đây
+                console.log('Xóa');
+            }
+
+            document.getElementById('roomForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // Thực hiện logic khi nhấn submit ở đây
+                console.log('SUBMIT');
+            });
+        </script>
+    </div>
+</body>
+</html>
